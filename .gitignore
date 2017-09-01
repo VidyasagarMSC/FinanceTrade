@@ -1,0 +1,8 @@
+node_modules
+npm-debug.log
+/.idea
+/.env
+.DS_Store
+vcap-local.json
+
+public/dashboard.html

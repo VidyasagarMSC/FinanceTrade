@@ -1,0 +1,10 @@
+---
+applications:
+- name: investment-insights-for-asset-managers
+  random-route: true
+  memory: 256M
+  services:
+    - discovery
+    - investment-portfolio
+    - predictive-market-scenarios
+    - simulated-instrument-analytics
