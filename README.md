@@ -1,9 +1,9 @@
-# Investment Insights for Asset Managers
+#  Finance Trade
 
-[![Build Status](https://api.travis-ci.org/IBM-Bluemix/investment-insights-for-asset-managers.svg?branch=master)](https://travis-ci.org/IBM-Bluemix/investment-insights-for-asset-managers)
-![Bluemix Deployments](https://deployment-tracker.mybluemix.net/stats/e13ee7de3df5bc6cf89950a82ef7a248/badge.svg)
+[![Build Status](https://api.travis-ci.org/IBM-Bluemix/investment-insights-for-asset-managers.svg?branch=master)](https://travis-ci.org/VidyasagarMSC/FinanceTrade)
 
-**Investment Insights for Asset Managers** is a Node.js application that uses [IBM Financial services](https://www.ibm.com/watson/financial-services/) and Watson services.  
+
+**Finance Trade** is a Node.js application that uses [IBM Financial services](https://www.ibm.com/watson/financial-services/) and Watson services.  
 
 The application is a modern portfolio manager that provides real-time insights into how news all around the world can impact any given investment portfolio.
 
@@ -27,35 +27,8 @@ The application uses the financial services to analyze a stock portfolio in rega
 1. The app calls the Predictive Market Scenarios service to create conditional scenarios to model how, given a change to a subset of factors the broader set of market factors are expected to change.
 1. Finally it computes analytics on the portfolio stocks under the given scenarios.
 
-## Deploy to Bluemix using DevOps Toolchain
-
-The app comes with a toolchain you can use to deploy the solution with few clicks. If you want to deploy it manually, you can skip this section.
-
-1. **Ensure your organization has enough quota for one web application using 256MB of memory and 4 services.**
-
-1. Click ***Deploy to Bluemix*** to start the Bluemix DevOps wizard:
-
-   [![Deploy To Bluemix](https://console.bluemix.net/devops/graphics/create_toolchain_button.png)](https://console.bluemix.net/devops/setup/deploy/?repository=https://github.com/IBM-Bluemix/investment-insights-for-asset-managers&branch=master)
-
-1. Select the **GitHub** box.
-
-1. Decide whether you want to fork/clone the app repository.
-
-1. If you decide to Clone, set a name for your GitHub repository.
-
-1. Select the **Delivery Pipeline** box.
-
-1. Select the region, organization and space where you want to deploy the app.
-
-1. Click **Create**.
-
-1. Select the Delivery Pipeline.
-
-1. Wait for the Deploy job to complete.
-
-1. Access the app when it's ready and start exploring.
-
-## Deploy to Bluemix manually
+   
+## Deploy to Bluemix
 
 1. If you do not already have a Bluemix account, [sign up here][bluemix_signup_url]
 
@@ -185,27 +158,3 @@ For more detailed information on troubleshooting your application, see the [Trou
 ## License
 
 See [License.txt](License.txt) for license information.
-
-# Privacy Notice
-
-This application is configured to track deployments to [IBM Bluemix](http://www.ibm.com/cloud-computing/bluemix/) and other Cloud Foundry platforms. The following information is sent to a [Deployment Tracker](https://github.com/IBM-Bluemix/cf-deployment-tracker-service) service on each deployment:
-
-* Node.js package version
-* Node.js repository URL
-* Application Name (`application_name`)
-* Space ID (`space_id`)
-* Application Version (`application_version`)
-* Application URIs (`application_uris`)
-* Labels of bound services
-* Number of instances for each bound service and associated plan information
-
-This data is collected from the `package.json` file in the application and the `VCAP_APPLICATION` and `VCAP_SERVICES` environment variables in IBM Bluemix and other Cloud Foundry platforms. This data is used by IBM to track metrics around deployments of sample applications to IBM Bluemix to measure the usefulness of our examples, so that we can continuously improve the content we offer to you. Only deployments of sample applications that include code to ping the Deployment Tracker service will be tracked.
-
-## Disabling Deployment Tracking
-
-Deployment tracking can be disabled by removing `require("cf-deployment-tracker-client").track();` from the beginning of the `app.js` file.
-
-[bluemix_signup_url]: https://console.bluemix.net/?cm_mmc=GitHubReadMe
-[cloud_foundry_url]: https://github.com/cloudfoundry/cli
-[download_node_url]: https://nodejs.org/download/
-[travis_url]: https://travis-ci.org/
