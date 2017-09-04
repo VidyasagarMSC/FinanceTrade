@@ -1,6 +1,6 @@
 ---
 applications:
-- name: investment-insights-for-asset-managers
+- name: fintrade
   random-route: true
   memory: 256M
   services:
