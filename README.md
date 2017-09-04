@@ -79,13 +79,29 @@ The app comes with a toolchain you can use to deploy the solution with few click
 
 1. `cd` into this newly created directory
 
-1. Navigate to manifest.yml file and change the NAME "investment-insights-for-sset-managers" to an unique name of your choice. The new name is your APP_NAME in the commands below.
+1. Navigate to manifest.yml file and change the NAME "fintrade" to an unique name of your choice. The new name is your APP_NAME in the commands below.
 
 1. Follow the above step for SERVICES as well.
 
 
 1. Create services required for this app
 
+1. Run the shell script "run.sh" to create the services in one go. 
+   1.  Make your shell script executable by running this command 
+   ```
+     chmod +x run.sh
+   ```
+   1. Copy the shell file to /usr/local/bin with the below command
+   ```
+    cp run.sh /usr/local/bin
+   ```
+   
+   On the terminal. just run the shell script.
+   
+   OR
+   
+   Manually create services
+   
    ```
    cf create-service discovery lite <Discovery_Service_Name>
    ```
