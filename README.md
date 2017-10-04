@@ -47,7 +47,7 @@ The application uses the financial services to analyze a stock portfolio in rega
 1. Clone the app to your local environment from your terminal using the following command:
 
    ```
-   git clone https://github.com/IBM-Bluemix/investment-insights-for-asset-managers.git
+   git clone https://github.com/VidyasagarMSC/FinanceTrade.git
    ```
 
 1. `cd` into this newly created directory
